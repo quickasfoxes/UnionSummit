@@ -216,10 +216,11 @@ p{margin:0 0 1em}
   border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);
 }
 .person-avatar{
-  width:56px;height:56px;border-radius:50%;flex:none;
+  width:72px;height:72px;border-radius:50%;flex:none;
   background:rgba(179,18,31,.1);color:var(--red);
   display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-head);font-weight:700;font-size:1.05rem;
+  font-family:var(--font-head);font-weight:700;font-size:1.2rem;
+  object-fit:cover;
 }
 .person h4{margin:0 0 2px;font-size:1.05rem}
 .person .person-title{color:var(--red);font-weight:700;font-size:.82rem;margin-bottom:8px;line-height:1.4}
