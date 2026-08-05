@@ -46,29 +46,29 @@
         <div class="icon">&#9993;</div>
         <h3>Join the Mailing List</h3>
         <p>Get event announcements and updates in your inbox.</p>
-        <span class="placeholder-note">Edit: connect a real mailing list</span>
+        <span class="placeholder-note">Coming soon</span>
       </div>
       <div class="card">
         <div class="icon">&#9679;</div>
         <h3>Social Media</h3>
         <p>Follow along for behind-the-scenes updates.</p>
-        <span class="placeholder-note">Edit: add social links in footer</span>
+        <span class="placeholder-note">Coming soon</span>
       </div>
-      <div class="card" id="volunteer">
+      <a href="#contact" class="card" id="volunteer" style="text-decoration:none">
         <div class="icon">&#9670;</div>
         <h3>Volunteer</h3>
-        <p>Help plan and run the Summit — no experience required, just interest.</p>
-      </div>
-      <div class="card" id="sponsor">
+        <p>Help plan and run the Summit — no experience required, just interest. Use the form below to reach out.</p>
+      </a>
+      <a href="#contact" class="card" id="sponsor" style="text-decoration:none">
         <div class="icon">&#9733;</div>
         <h3>Sponsor the Summit</h3>
-        <p>Support the event and get your organization in front of a highly engaged audience of surgeons, NGO leaders, and industry innovators.</p>
-      </div>
-      <div class="card">
+        <p>Support the event and get your organization in front of a highly engaged audience. Use the form below to reach out.</p>
+      </a>
+      <a href="#contact" class="card" style="text-decoration:none">
         <div class="icon">&#9998;</div>
         <h3>Contact Us</h3>
         <p>Questions? Reach out any time — see the form below.</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -103,6 +103,7 @@
       </div>
     </div>
     <p class="text-center" style="color:var(--ink-soft);margin-top:24px">Custom packages — sponsoring a dinner, a breakout room, or international travel grants — are available upon request.</p>
+    <p class="text-center" style="margin-top:24px"><a href="#contact" class="btn btn-solid">Inquire About Sponsorship</a></p>
   </div>
 </section>
 
@@ -111,9 +112,18 @@
     <div class="section-head">
       <span class="eyebrow" style="color:var(--red)">Contact</span>
       <h2>Send us a message</h2>
-      <p>Fill this out and it'll open in your email client, addressed to the Summit team.</p>
+      <p>Volunteering, sponsorship, working groups, or a general question — this goes straight to the Summit team.</p>
     </div>
-    <form class="form" action="mailto:info@unionsummit.org" method="post" enctype="text/plain">
+    <!--
+      EDITOR NOTE: this form currently opens the visitor's email app (mailto),
+      which is clunky and drops attachments/formatting. To make it submit
+      directly from the page to info@theunionsummit.com, connect Formspree
+      (free): create a form at formspree.io targeting info@theunionsummit.com,
+      then replace the action="mailto:..." line below with:
+        action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+      and remove the enctype attribute.
+    -->
+    <form class="form" action="mailto:info@theunionsummit.com" method="post" enctype="text/plain">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -125,6 +135,7 @@
         <option>Mailing List</option>
         <option>Volunteering</option>
         <option>Sponsorship</option>
+        <option>Working Groups</option>
         <option>General Question</option>
       </select>
 
@@ -133,9 +144,6 @@
 
       <button type="submit" class="btn btn-solid">Send Message</button>
     </form>
-    <p style="color:var(--ink-soft);font-size:.85rem;margin-top:14px">
-      Note for editors: this form currently opens the visitor's email app. For a form that submits without leaving the page, connect a free service like Formspree and swap the <code>action</code> URL above — see the deployment guide.
-    </p>
   </div>
 </section>
 
@@ -146,7 +154,7 @@
         <a href="index.html" class="brand" style="color:#fff;margin-bottom:10px;display:flex">
           <img src="logo-icon.png" alt="Union Summit logo" class="brand-mark"> Union Summit
         </a>
-        <p>An international symposium advancing global plastic surgery — education, innovation, and access. July 10–12, 2026 · Madison, Wisconsin.</p>
+        <p>An international symposium advancing global plastic surgery — education, innovation, and access. Next Union Summit: July 14–16, 2028.</p>
       </div>
       <div>
         <h4>Explore</h4>
@@ -167,7 +175,7 @@
       <div>
         <h4>Connect</h4>
         <ul>
-          <li><a href="mailto:info@unionsummit.org">info@unionsummit.org</a></li>
+          <li><a href="mailto:info@theunionsummit.com">info@theunionsummit.com</a></li>
         </ul>
         <div class="social-row" style="margin-top:14px">
           <a href="#" aria-label="LinkedIn">in</a>
