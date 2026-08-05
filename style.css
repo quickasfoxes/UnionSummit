@@ -58,8 +58,9 @@ p{margin:0 0 1em}
 }
 .brand{
   display:flex;align-items:center;gap:10px;
-  font-family:var(--font-head);font-weight:600;font-size:1.35rem;
-  color:var(--ink);text-decoration:none;
+  font-family:var(--font-body);font-weight:800;font-size:1.15rem;
+  text-transform:uppercase;letter-spacing:.03em;
+  color:var(--red);text-decoration:none;
 }
 .brand-mark{
   height:36px;width:auto;object-fit:contain;flex:none;
@@ -114,6 +115,9 @@ p{margin:0 0 1em}
 }
 .hero-logo img{height:120px;width:auto;display:block}
 @media (max-width:600px){.hero-logo{padding:16px 20px}.hero-logo img{height:80px}}
+.hero-logo-plain{display:flex}
+.hero-logo-plain img{height:150px;width:auto;display:block;filter:drop-shadow(0 12px 24px rgba(0,0,0,.25))}
+@media (max-width:600px){.hero-logo-plain img{height:100px}}
 .eyebrow{
   text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:700;
   color:rgba(255,255,255,.85);
